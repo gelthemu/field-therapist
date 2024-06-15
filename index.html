@@ -10,6 +10,7 @@
   <!-- stylesheets -->
   <link rel="stylesheet" type="text/css" href="styles.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/navigation-bar.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/hero-section.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/footer-section.css">
   <link rel="stylesheet" type="text/css" href="assets/css/get-started.css">
   <link rel="icon" type="image/png" href="assets/gallery/field_therapist_icon.png" />
@@ -68,7 +69,7 @@
     <div class="navbar-mobile-popup" id="navbar-mobile-popup">
       <div class="navbar-mobile-header">
         <div class="navbar-mobile-brand">
-          <a href="index.html"><strong>FieldTherapist</strong></a>
+          <a href="#home"><strong>FieldTherapist</strong></a>
         </div>
         <div id="navbar-mobile-popup-close" class="navbar-mobile-popup-close" type="button">
           <i class="fa-solid fa-xmark"></i>
@@ -100,6 +101,28 @@
     </div>
   </nav>
 
+  <!-- hero section -->
+  <section id="home" class="hero">
+    <div class="hero-overlay-wrapper">
+      <div class="hero-overlay">
+        <div class="hero-overlay-upper">
+          <h1>Find Your Path <span>to</span> Well-Being</h1>
+          <p>
+            Life can be challenging, but you don't have to face it alone. Explore our resources, get personalized
+            advice, and start your journey towards <span>mental wellness</span> today.
+          </p>
+          <div class="hero-overlay-upper-btn">
+            <button class="get-started-button" type="button">Get <span>Help</span> Today!</button>
+          </div>
+        </div>
+        <div class="hero-overlay-lower">
+          <p class="hero-overlay-lower-first">Confidential & Secure&nbsp; | <span>&nbsp;Personalized Advice&nbsp; | </span>&nbsp;Accessible Anytime, Anywhere.</p>
+          <p class="hero-overlay-lower-second">Featured on <a href="https://www.youtube.com/watch?v=lZMac7Gxupc" target="_blank"><img class="flourishing-minds" src="https://i.ibb.co/JRWnMDK/flourishing-minds-podcast-logo.png" width="50px" alt="Flourishing Minds Podcast Logo"></a>&nbsp; • &nbsp;Certified by <a href="https://strongminds.org/team/roscoe-kasujja/" target="_blank"><img class="strong-minds" src="https://strongminds.org/wp-content/uploads/2024/01/strongmindslogo.png" width="85px" alt="StrongMinds Logo"></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- get started -->
   <div class="get-started" id="get-started">
     <div class="get-started-container">
@@ -111,23 +134,15 @@
             We are here to help. Please fill out the form below to get started
             on your journey to well-being!..
           </p>
-          <div
-      id="get-started-close"
-      class="get-started-close"
-      type="button"
-    >
-      <span>Close</span> <i class="fa-solid fa-xmark"></i>
-    </div>
+          <div id="get-started-close" class="get-started-close" type="button">
+            <span>Close</span> <i class="fa-solid fa-xmark"></i>
+          </div>
         </div>
 
         <!-- contactForm -->
         <div class="get-started-content">
-          <form
-            class="get-started-contactForm"
-            id="get-started-contactForm"
-            action="https://formbold.com/s/91yln"
-            method="POST"
-          >
+          <form class="get-started-contactForm" id="get-started-contactForm" action="https://formbold.com/s/91yln"
+            method="POST">
             <label for="name">Full Name</label>
             <input type="text" id="name" name="name" required />
 
@@ -135,23 +150,11 @@
             <input type="email" id="email" name="email" required />
 
             <label for="phone">Phone Number (optional)</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              pattern="[0-9]{10,15}"
-            />
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" />
 
             <label for="reason">Reason for Seeking Therapy:</label>
-            <textarea
-              id="reason"
-              name="reason"
-              rows="6"
-              minlength="50"
-              maxlength="300"
-              placeholder="Briefly describe why you are seeking therapy..."
-              required
-            ></textarea>
+            <textarea id="reason" name="reason" rows="6" minlength="50" maxlength="300"
+              placeholder="Briefly describe why you are seeking therapy..." required></textarea>
             <div id="char-count">300</div>
 
             <button type="submit">Submit</button>
@@ -175,7 +178,7 @@
       <div class="footer-bar upperbar">
         <div class="upperbar-left">
           <p>
-            <a href="index.html"><strong>FieldTherapist</strong></a>
+            <a href="#home"><strong>FieldTherapist</strong></a>
           </p>
           <p>Empowering Minds, One Session at a Time.</p>
         </div>
@@ -185,7 +188,7 @@
       </div>
       <div class="footer-bar middlebar" id="middlebar">
         <div class="middlebar-left-links">
-          <a href="index.html">Home</a>
+          <a href="#home">Home</a>
           <a href="index.html">About Us</a>
           <a href="index.html">Get Help</a>
           <a href="index.html">Careers</a>

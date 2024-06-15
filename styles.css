@@ -15,10 +15,14 @@ body {
 }
 
 :root {
-  --brand-color: #0a0a23; /* 10, 10, 35 */
-  --complementary-color: #23230a; /* 35, 35, 10 */
-  --baby-blue: #2ea6d1; /* 126, 200, 227 */
-  --dark-gray: #a6a6a6; /* 166, 166, 166 */
+  --brand-color: #0a0a23;
+  /* 10, 10, 35 */
+  --complementary-color: #23230a;
+  /* 35, 35, 10 */
+  --baby-blue: #2ea6d1;
+  /* 126, 200, 227 */
+  --dark-gray: #a6a6a6;
+  /* 166, 166, 166 */
   --bg-color: #ffffff;
 
   --default-font: "Albert Sans", sans-serif;
@@ -30,3 +34,4 @@ body {
   color: var(--brand-color);
   background-color: var(--bg-color);
 }
+

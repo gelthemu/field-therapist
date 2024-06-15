@@ -1,0 +1,220 @@
+/* ===== Hero Section ============================================ */
+.hero {
+  height: 100vh;
+  max-height: 1000px;
+  width: 100%;
+  background: url("../gallery/field_bg.png") no-repeat center bottom / cover;
+  position: relative;
+}
+
+.hero-overlay-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(255, 255, 255, 0.35) 60%,
+    var(--complementary-color) 99.5%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+  text-align: center;
+  width: 95%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay-upper {
+  max-width: 900px;
+  padding: 15px 0;
+}
+
+.hero-overlay-upper h1 {
+  font-weight: 700;
+  font-size: 3em;
+  margin-bottom: 15px;
+  text-shadow: 0 0 5px var(--bg-color);
+}
+
+.hero-overlay-upper h1 span {
+  font-weight: 500;
+  color: var(--baby-blue);
+  text-shadow: 0 0 5px var(--brand-color);
+}
+
+.hero-overlay-upper p {
+  font-weight: 500;
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  text-shadow: 0 0 3px var(--bg-color);
+}
+
+.hero-overlay-upper p span {
+  font-weight: 600;
+  color: var(--bg-color);
+  text-shadow: none;
+}
+
+.hero-overlay-upper-btn {
+  width: 170px;
+  margin: 0 auto;
+}
+
+.hero-overlay-upper-btn button {
+  color: var(--bg-color);
+  font-family: var(--default-font);
+  font-size: 1.15em;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  background-color: var(--baby-blue);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.hero-overlay-upper-btn button span {
+  color: var(--complementary-color);
+}
+
+.hero-overlay-upper-btn button:hover {
+  color: var(--bg-color);
+  background-color: var(--complementary-color);
+}
+
+.hero-overlay-upper-btn button:hover span {
+  color: var(--dark-gray);
+}
+
+.hero-overlay-lower {
+  position: absolute;
+  bottom: 2%;
+  padding: 10px;
+}
+
+.hero-overlay-lower p {
+  font-weight: 450;
+}
+
+.hero-overlay-lower-first {
+  font-size: 0.9em;
+  padding-bottom: 10px;
+  color: var(--brand-color);
+  border-bottom: 1px solid rgba(166, 166, 166, 0.5);
+  text-shadow: 0 0 5px var(--bg-color);
+}
+
+.hero-overlay-lower-second {
+  font-size: 0.75em;
+  margin-top: 10px;
+  color: var(--dark-gray);
+}
+
+.hero-overlay-lower-second a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hero-overlay-lower-second a .flourishing-minds {
+  margin: 0 0 -10px 2px;
+}
+
+.hero-overlay-lower-second a .strong-minds {
+  margin: 0 0 -2px 1px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 800px) {
+  .hero-overlay-upper h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+
+  .hero-overlay-upper p {
+    font-weight: 550;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+
+  .hero-overlay-upper-btn {
+    width: 150px;
+  }
+
+  .hero-overlay-upper-btn button {
+    font-size: 1em;
+    padding: 8px 10px;
+  }
+
+  .hero-overlay-lower {
+    position: absolute;
+    bottom: 1%;
+    padding: 5px;
+  }
+
+  .hero-overlay-lower-first {
+    font-size: 0.8em;
+    font-weight: 600;
+    padding-bottom: 9px;
+  }
+
+  .hero-overlay-lower-second {
+    font-size: 0.6em;
+    margin-top: 7px;
+  }
+
+  .hero-overlay-lower-second a .flourishing-minds {
+    width: 40px;
+    margin: 0 0 -7px 2px;
+  }
+
+  .hero-overlay-lower-second a .strong-minds {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .hero-overlay-upper h1 {
+    font-size: 1.3em;
+  }
+
+  .hero-overlay-upper p {
+    font-size: 0.8em;
+    padding: 0 10px;
+  }
+
+  .hero-overlay-upper-btn {
+    width: 130px;
+  }
+
+  .hero-overlay-upper-btn button {
+    font-size: 0.9em;
+    padding: 5px 10px;
+  }
+
+  .hero-overlay-lower-first {
+    font-size: 0.7em;
+  }
+
+  .hero-overlay-lower-first span {
+    display: none;
+  }
+
+  .hero-overlay-lower-second {
+    font-size: 0.55em;
+  }
+}
