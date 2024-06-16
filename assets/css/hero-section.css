@@ -115,7 +115,6 @@
   padding-bottom: 10px;
   color: var(--brand-color);
   border-bottom: 1px solid rgba(166, 166, 166, 0.5);
-  text-shadow: 0 0 5px var(--bg-color);
 }
 
 .hero-overlay-lower-second {
