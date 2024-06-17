@@ -2,14 +2,18 @@
 .footer {
   display: block;
   width: 100%;
-  font-size: 16px;
+  font-size: 18px;
   font-family: var(--default-font);
   background: linear-gradient(
     180deg,
-    var(--dark-gray) 1%,
-    var(--bg-color) 20%,
-    var(--bg-color)
+    var(--dark-gray) 0.05%,
+    var(--bg-color) 30%,
+    var(--bg-color),
+    var(--bg-color) 70%,
+    var(--dark-gray) 99.95%
   );
+  border-bottom: 1px solid var(--bg-color);
+  padding: 30px 20px;
 }
 
 .footer-wrap {
@@ -148,6 +152,10 @@
 }
 
 @media only screen and (max-width: 532px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
   .upperbar {
     display: flex;
     flex-direction: column;

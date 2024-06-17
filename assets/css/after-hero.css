@@ -2,14 +2,16 @@
 .afterHero {
   display: block;
   width: 100%;
-  font-size: 16px;
   font-family: var(--default-font);
   background: linear-gradient(
     180deg,
-    var(--dark-gray) 1%,
-    var(--bg-color) 20%,
-    var(--bg-color)
+    var(--dark-gray) 0.05%,
+    var(--bg-color) 30%,
+    var(--bg-color),
+    var(--bg-color) 70%,
+    var(--dark-gray) 99.95%
   );
+  border-bottom: 1px solid var(--bg-color);
   padding: 80px 40px;
 }
 
@@ -38,7 +40,7 @@
 }
 
 .afterHero-left-access {
-  border-bottom: 2px dashed black;
+  border-bottom: 2px dashed var(--dark-gray);
 }
 
 .afterHero-left-access p {
