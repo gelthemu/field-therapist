@@ -88,9 +88,9 @@
   transition: all 0.3s ease-out;
 }
 
-.hero-overlay-upper-btn button span {
+.hero-overlay-upper-btn button span i {
   color: var(--complementary-color);
-  font-family: var(--playwrite-font);
+  font-family: var(--counter-font);
 }
 
 .hero-overlay-upper-btn button:hover {
@@ -99,7 +99,7 @@
   transform: scale(1.025);
 }
 
-.hero-overlay-upper-btn button:hover span {
+.hero-overlay-upper-btn button:hover span i {
   color: var(--dark-gray);
 }
 
