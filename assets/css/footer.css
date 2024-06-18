@@ -123,7 +123,7 @@
 .lowerbar span a {
   text-decoration: none;
   color: var(--complementary-color);
-  font-family: var(--playwrite-font);
+  font-family: var(--counter-font);
   font-weight: 700;
 }
 

@@ -43,9 +43,9 @@
   border-bottom: 2px dashed var(--dark-gray);
 }
 
-.afterHero-left-access p {
-  font-family: var(--playwrite-font);
-  font-weight: 500;
+.afterHero-left-access p i {
+  font-family: var(--counter-font);
+  font-weight: 450;
   font-size: 30px;
   max-width: 300px;
   margin: 0 auto;
@@ -214,7 +214,7 @@
     padding: 30px;
   }
 
-  .afterHero-left-access p {
+  .afterHero-left-access p i {
     font-size: 25px;
   }
 
@@ -287,7 +287,7 @@
     padding: 25px;
   }
 
-  .afterHero-left-access p {
+  .afterHero-left-access p i {
     font-size: 23px;
   }
 
@@ -307,7 +307,7 @@
     padding: 20px 10px;
   }
 
-  .afterHero-left-access p {
+  .afterHero-left-access p i {
     font-size: 20px;
   }
 
