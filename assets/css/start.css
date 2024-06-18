@@ -29,7 +29,7 @@
 .get-started-display {
   width: 35%;
   height: 100%;
-  background: url("../gallery/get-started.png") no-repeat center center / cover;
+  background: url("../gallery/start.png") no-repeat center center / cover;
 }
 
 .get-started-wrapper {
@@ -221,6 +221,12 @@
     font-size: 12px;
     margin-top: 2px;
   }
+
+  @media only screen and (max-width: 769px) {
+    .get-started-container {
+      margin-top: 50px;
+    }
+  }
   
   @media only screen and (max-width: 600px) {
     .get-started-container {
@@ -231,7 +237,7 @@
     .get-started-display {
       width: 100%;
       height: 20%;
-      background: url("../gallery/get-started-ls.png") no-repeat center center / cover;
+      background: url("../gallery/start-ls.png") no-repeat center center / cover;
     }
 
     .get-started-wrapper {

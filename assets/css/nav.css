@@ -49,20 +49,24 @@
   .navbar-menu a {
     color: var(--bg-color);
     text-decoration: none;
+    transition: all .3s ease-out;
   }
   
   .navbar-tablet .navbar-menu a {
     color: var(--brand-color);
     text-decoration: none;
+    transition: all .3s ease-out;
   }
   
   .navbar-menu a:hover {
     color: var(--baby-blue);
     text-decoration: underline;
+    transform: scale(1.15);
   }
   
   .navbar-tablet .navbar-menu a:hover {
     color: var(--bg-color);
+    transform: scale(1.15);
   }
   
   .navbar-dropdown {
@@ -78,6 +82,7 @@
   
   .navbar-dropdown a:hover {
     text-decoration: none;
+    transform: scale(1);
   }
   
   .navbar-dropdown i {
@@ -122,6 +127,7 @@
     text-decoration: none;
     color: var(--bg-color);
     background: none;
+    transform: scale(1.025);
   }
   
   .navbar-start-btn {
@@ -142,11 +148,13 @@ padding: 0;
     cursor: pointer;
     width: 100%;
     height: 100%;
+    transition: all .3s ease-out;
   }
 
   .navbar-start-btn button:hover {
     background: var(--baby-blue);
     color: var(--bg-color);
+    transform: scale(1.1);
   }
   
   .navbar-toggle {
@@ -253,11 +261,13 @@ padding: 0;
   .navbar-mobile-menu a {
     color: var(--bg-color);
     text-decoration: none;
+    transition: all .3s ease-out;
   }
   
   .navbar-mobile-menu a:hover {
     text-decoration: underline;
     background: transparent;
+    transform: scale(1.15);
   }
   
   .navbar-mobile-dropdown {
@@ -273,6 +283,7 @@ padding: 0;
   
   .navbar-mobile-dropdown a:hover {
     text-decoration: none;
+    transform: scale(1);
   }
   
   .navbar-mobile-dropdown i {
@@ -309,6 +320,7 @@ padding: 0;
     text-decoration: none;
     color: var(--complementary-color);
     background: none;
+    transform: scale(1.025);
   }
   
   .navbar-mobile-start-btn {
@@ -329,11 +341,13 @@ padding: 0;
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;
+    transition: all .3s ease-out;
   }
 
   .navbar-mobile-start-btn button:hover {
     background: var(--baby-blue);
     color: var(--bg-color);
+    transform: scale(1.1);
   }
   
   .navbar-mobile-footer {

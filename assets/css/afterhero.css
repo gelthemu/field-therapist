@@ -44,8 +44,9 @@
 }
 
 .afterHero-left-access p {
-  font-weight: 600;
-  font-size: 25px;
+  font-family: var(--playwrite-font);
+  font-weight: 500;
+  font-size: 30px;
   max-width: 300px;
   margin: 0 auto;
 }
@@ -129,6 +130,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.25s ease-in;
 }
 
 .afterHero-stat-number span {
@@ -141,6 +143,54 @@
   font-size: 20px;
   font-weight: 600;
   color: var(--dark-gray);
+  transition: opacity 0.25s ease-in;
+}
+
+.afterHero-stats-content-bar {
+  position: relative;
+  overflow: hidden;
+}
+
+.afterHero-stats-content-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.afterHero-stats-content-overlay p {
+  color: var(--dark-gray);
+  font-size: 1.6em;
+  font-weight: 900;
+  line-height: 1.2;
+  transform: scaleX(-0.25);
+  transition: transform 0.5s ease-in;
+}
+
+.afterHero-stats-content-bar:is(:hover, :focus)
+  .afterHero-stats-content-overlay
+  p {
+  transform: scaleX(1);
+}
+
+.afterHero-stats-content-overlay p span {
+  color: var(--baby-blue);
+  font-size: 1.2em;
+}
+
+.afterHero-stats-content-bar:is(:hover, :focus) .afterHero-stat-number,
+.afterHero-stats-content-bar:is(:hover, :focus) .afterHero-stat-text {
+  opacity: 0;
+}
+
+.afterHero-stats-content-bar:hover .afterHero-stats-content-overlay {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 769px) {
@@ -210,6 +260,10 @@
 
   .afterHero-stat-text {
     font-size: 20px;
+  }
+
+  .afterHero-stats-content-overlay p {
+    font-size: 1.25em;
   }
 }
 
@@ -298,5 +352,9 @@
 
   .afterHero-stat-text {
     font-size: 18px;
+  }
+
+  .afterHero-stats-content-overlay p {
+    font-size: 1.1em;
   }
 }

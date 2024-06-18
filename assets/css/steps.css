@@ -1,0 +1,232 @@
+/* Steps */
+.steps {
+  display: block;
+  width: 100%;
+  font-family: var(--default-font);
+  border-bottom: 1px solid var(--bg-color);
+  background: url("../gallery/steps-bg.png") repeat center center / cover;
+}
+
+.steps-container {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--dark-gray) 0.05%,
+    rgba(255, 255, 255, 0.5) 30%,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5) 70%,
+    var(--dark-gray) 99.95%
+  );
+  padding: 80px 40px 100px;
+}
+
+.steps-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  color: var(--brand-color);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.steps-header,
+.steps-content {
+  width: 100%;
+}
+
+.steps-header h1 {
+  font-size: 40px;
+  font-weight: 800;
+  padding: 20px;
+}
+
+.steps-content {
+  display: grid;
+  gap: 2.5%;
+  font-size: 18px;
+}
+
+.step {
+  position: relative;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  height: 250px;
+  color: var(--bg-color);
+  border: 8px solid var(--dark-gray);
+  border-radius: 30px;
+  transition: all 0.25s ease-in;
+}
+
+.step-one,
+.step-three {
+  background: linear-gradient(
+    90deg,
+    var(--brand-color) 0%,
+    var(--complementary-color) 100%
+  );
+}
+
+.step-two,
+.step-four {
+  background: linear-gradient(
+    -90deg,
+    var(--brand-color) 0%,
+    var(--complementary-color) 100%
+  );
+}
+
+.step-number {
+  background: radial-gradient(var(--bg-color), var(--dark-gray));
+  font-size: 50px;
+  font-weight: 700;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: all 0.25s ease-in;
+}
+
+.step-one .step-number,
+.step-three .step-number {
+  color: var(--brand-color);
+}
+
+.step-two .step-number,
+.step-four .step-number {
+  color: var(--brand-color);
+}
+
+.step-details .step-details-heading {
+  font-size: 20px;
+  font-weight: 700;
+  transition: opacity 0.25s ease-in;
+}
+
+.step-details-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in;
+  color: var(--bg-color);
+  border-radius: 30px;
+  font-size: 1.05em;
+  font-weight: 500;
+  line-height: 1.25;
+  opacity: 0;
+  transition: opacity 0.25s ease-in;
+}
+
+.step-details-overlay p span {
+  font-size: 1.1em;
+  font-weight: 800;
+  color: var(--baby-blue);
+  cursor: pointer;
+}
+
+.step:is(:hover, :focus) {
+  border: 8px solid var(--baby-blue);
+  background: linear-gradient(
+    0deg,
+    var(--brand-color) 0%,
+    var(--complementary-color) 100%
+  );
+}
+
+.step:is(:hover, :focus) .step-details-overlay {
+  opacity: 1;
+}
+
+.step:is(:hover, :focus) .step-details-overlay {
+  opacity: 1;
+}
+
+.step:is(:hover, :focus) .step-details-heading,
+.step:is(:hover, :focus) .step-number {
+  opacity: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .steps-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .steps-container {
+    padding: 60px 40px 100px;
+  }
+
+  .steps-header h1 {
+    font-size: 35px;
+  }
+
+  .steps-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.5% 2.5%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .steps-header h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 702px) {
+  .steps-container {
+    padding: 50px 40px 150px;
+  }
+
+  .steps-header h1 {
+    font-size: 25px;
+  }
+
+  .steps-content {
+    grid-template-columns: 1fr;
+    gap: 2% 0%;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (max-width: 502px) {
+  .steps-container {
+    padding: 50px 30px 140px;
+  }
+
+  .steps-header h1 {
+    font-size: 1.5em;
+  }
+
+  .steps-content {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .steps-container {
+    padding: 50px 20px 140px;
+  }
+
+  .steps-header h1 {
+    font-size: 1.2em;
+  }
+
+  .steps-content {
+    padding: 0 5px;
+  }
+}

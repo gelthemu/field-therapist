@@ -61,11 +61,13 @@
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
+  transition: all .3s ease-out;
 }
 
 .footer-start-btn:hover {
   background: var(--complementary-color);
   color: var(--bg-color);
+  transform: scale(1.1);
 }
 
 .middlebar {
@@ -87,10 +89,12 @@
   padding: 5px;
   text-align: left;
   font-weight: 450;
+  transition: all .3s ease-out;
 }
 
 .middlebar-left-links a:hover {
   text-decoration: underline;
+  transform: scale(1.1);
 }
 
 .middlebar-right-socials {
@@ -102,10 +106,12 @@
 .middlebar-right-socials a {
   text-decoration: none;
   color: var(--complementary-color);
+  transition: all .3s ease-out;
 }
 
 .middlebar-right-socials a:hover {
   color: var(--baby-blue);
+  transform: scale(1.2);
 }
 
 .lowerbar {
@@ -117,6 +123,7 @@
 .lowerbar span a {
   text-decoration: none;
   color: var(--complementary-color);
+  font-family: var(--playwrite-font);
   font-weight: 700;
 }
 

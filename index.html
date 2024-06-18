@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- meta data -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <!-- meta data -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE-Edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/hero.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/afterhero.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/mission.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/steps.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/start.css" />
+    <link rel="icon" type="image/png" href="assets/gallery/ft_icon.svg" />
 
-  <!-- stylesheets -->
-  <link rel="stylesheet" type="text/css" href="styles.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/navigation-bar.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/hero-section.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/after-hero.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/mission.css" />
-  <link rel="stylesheet" type="text/css" href="assets/css/footer-section.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/get-started.css">
-  <link rel="icon" type="image/png" href="assets/gallery/field_therapist_icon.svg" />
+    <title>FieldTherapist</title>
+  </head>
 
-  <title>FieldTherapist</title>
-</head>
-
-<body>
-  <!-- navigation -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <div class="navbar-container-wrap">
-        <div class="navbar-brand">
-          <a href="index.html"><strong>FieldTherapist</strong></a>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-container-wrap">
+          <div class="navbar-brand">
+            <a href="index.html"><strong>FieldTherapist</strong></a>
+          </div>
+          <div class="navbar-menu">
+            <a href="#about">About Us</a>
+            <a href="index.html">Get Help</a>
+            <a href="index.html">Our Team</a>
+            <a href="index.html">Contact Us</a>
+            <div class="navbar-dropdown">
+              <a href="#">More <i class="fa-solid fa-chevron-down"></i></a>
+              <div class="dropdown-content">
+                <a href="index.html">Careers</a>
+                <a href="index.html">Press & Events</a>
+                <a href="index.html">FAQs</a>
+              </div>
+            </div>
+          </div>
+          <div class="navbar-start-btn">
+            <button class="get-started-button" type="button">
+              Get Started
+            </button>
+          </div>
+          <div class="navbar-toggle" id="navbar-toggle-button" type="button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
+      </div>
+
+      <div class="navbar-tablet">
         <div class="navbar-menu">
-          <a href="#about">About Us</a>
+          <a href="index.html">About Us</a>
           <a href="index.html">Get Help</a>
           <a href="index.html">Our Team</a>
           <a href="index.html">Contact Us</a>
@@ -42,266 +68,382 @@
             </div>
           </div>
         </div>
-        <div class="navbar-start-btn">
-          <button class="get-started-button" type="button">Get Started</button>
-        </div>
-        <div class="navbar-toggle" id="navbar-toggle-button" type="button">
-          <i class="fa-solid fa-bars"></i>
-        </div>
       </div>
-    </div>
 
-    <div class="navbar-tablet">
-      <div class="navbar-menu">
-        <a href="index.html">About Us</a>
-        <a href="index.html">Get Help</a>
-        <a href="index.html">Our Team</a>
-        <a href="index.html">Contact Us</a>
-        <div class="navbar-dropdown">
-          <a href="#">More <i class="fa-solid fa-chevron-down"></i></a>
-          <div class="dropdown-content">
-            <a href="index.html">Careers</a>
-            <a href="index.html">Press & Events</a>
-            <a href="index.html">FAQs</a>
+      <div class="navbar-mobile-popup" id="navbar-mobile-popup">
+        <div class="navbar-mobile-header">
+          <div class="navbar-mobile-brand">
+            <a href="#home"><strong>FieldTherapist</strong></a>
+          </div>
+          <div
+            id="navbar-mobile-popup-close"
+            class="navbar-mobile-popup-close"
+            type="button"
+          >
+            <i class="fa-solid fa-xmark"></i>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="navbar-mobile-popup" id="navbar-mobile-popup">
-      <div class="navbar-mobile-header">
-        <div class="navbar-mobile-brand">
-          <a href="#home"><strong>FieldTherapist</strong></a>
-        </div>
-        <div id="navbar-mobile-popup-close" class="navbar-mobile-popup-close" type="button">
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-      </div>
-
-      <div class="navbar-mobile-content">
-        <div class="navbar-mobile-menu">
-          <a href="index.html">About Us</a>
-          <a href="index.html">Get Help</a>
-          <a href="index.html">Our Team</a>
-          <a href="index.html">Contact Us</a>
-          <div class="navbar-mobile-dropdown">
-            <a href="#">More <i class="fa-solid fa-chevron-down"></i></a>
-            <div class="navbar-mobile-dropdown-content">
-              <a href="index.html">Careers</a>
-              <a href="index.html">Press & Events</a>
-              <a href="index.html">FAQs</a>
+        <div class="navbar-mobile-content">
+          <div class="navbar-mobile-menu">
+            <a href="index.html">About Us</a>
+            <a href="index.html">Get Help</a>
+            <a href="index.html">Our Team</a>
+            <a href="index.html">Contact Us</a>
+            <div class="navbar-mobile-dropdown">
+              <a href="#">More <i class="fa-solid fa-chevron-down"></i></a>
+              <div class="navbar-mobile-dropdown-content">
+                <a href="index.html">Careers</a>
+                <a href="index.html">Press & Events</a>
+                <a href="index.html">FAQs</a>
+              </div>
             </div>
           </div>
+          <div class="navbar-mobile-start-btn">
+            <button class="get-started-button" type="button">
+              Get Started
+            </button>
+          </div>
         </div>
-        <div class="navbar-mobile-start-btn">
-          <button class="get-started-button" type="button">Get Started</button>
+        <div class="navbar-mobile-footer">
+          <small>&copy; 2024 &nbsp; · &nbsp; Geltaverse, Inc</small>
         </div>
       </div>
-      <div class="navbar-mobile-footer">
-        <small>&copy; 2024 &nbsp; · &nbsp; Geltaverse, Inc</small>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- hero section -->
-  <section id="home" class="hero">
-    <div class="hero-overlay-wrapper">
-      <div class="hero-overlay">
-        <div class="hero-overlay-upper">
-          <h1>Find Your Path <span>to</span> Well-Being</h1>
-          <p>
-            Life can be challenging, but you don't have to face it alone. Explore our resources, get personalized
-            advice, and start your journey towards <span>mental wellness</span> today.
-          </p>
-          <div class="hero-overlay-upper-btn">
-            <button class="get-started-button" type="button">Get <span>Help</span> Today!</button>
+    <!-- hero section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay-wrapper">
+        <div class="hero-overlay">
+          <div class="hero-overlay-upper">
+            <h1>Find Your Path <span>to</span> Well-Being</h1>
+            <p>
+              Life can be challenging, but you don't have to face it alone.
+              Explore our resources, get personalized advice, and start your
+              journey towards <span>mental wellness</span> today.
+            </p>
+            <div class="hero-overlay-upper-btn">
+              <button class="get-started-button" type="button">
+                Get <span>Help</span> Today!
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="hero-overlay-lower">
-          <p class="hero-overlay-lower-first">Confidential & Secure&nbsp; | <span>&nbsp;Personalized Advice&nbsp; |
-            </span>&nbsp;Accessible Anytime, Anywhere.</p>
-          <p class="hero-overlay-lower-second">Featured on <a href="https://www.youtube.com/watch?v=lZMac7Gxupc"
-              target="_blank"><img class="flourishing-minds"
-                src="https://i.ibb.co/JRWnMDK/flourishing-minds-podcast-logo.png" width="50px"
-                alt="Flourishing Minds Podcast Logo"></a>&nbsp; • &nbsp;Certified by <a
-              href="https://strongminds.org/team/roscoe-kasujja/" target="_blank"><img class="strong-minds"
-                src="https://strongminds.org/wp-content/uploads/2024/01/strongmindslogo.png" width="85px"
-                alt="StrongMinds Logo"></a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- afterHero -->
-  <section id="afterHero" class="afterHero">
-    <div class="afterHero-wrapper">
-      <div class="afterHero-left">
-        <div class="afterHero-left-access">
-          <p>We believe <span>mental health</span> care should be accessible to everyone.</p>
-        </div>
-        <div class="afterHero-left-start">
-          <p>Start your <span>journey</span> with us today and take the <span>first step</span> towards a healthier,
-            <span>happier</span> you!..
-          </p>
-        </div>
-      </div>
-      <div class="afterHero-right">
-        <div class="afterHero-stats-header">
-          <p>Stats don't lie...</p>
-        </div>
-        <div class="afterHero-stats-content">
-          <div class="afterHero-stats-content-upper">
-            <p class="afterHero-stat-number"><span>190,000</span>+</p>
-            <p class="afterHero-stat-text">Chat, Video Sessions</p>
-          </div>
-          <div class="afterHero-stats-content-middle">
-            <p class="afterHero-stat-number"><span>500</span>+</p>
-            <p class="afterHero-stat-text">Therapists Ready To Help</p>
-          </div>
-          <div class="afterHero-stats-content-lower">
-            <p class="afterHero-stat-number"><span>2,000</span>+</p>
-            <p class="afterHero-stat-text">People Got Help</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- mission -->
-  <section id="missio" class="mission">
-    <div class="mission-wrapper">
-      <div class="mission-header">
-        <h1>Why we do what we do?</h1>
-      </div>
-      <div class="mission-content">
-        <div class="mission-content-bar mission-content-left">
-          <div class="mission-content-icon">
-            <img src="assets/gallery/mission-content-icon-1.svg" alt="FT-Content-Icon">
-          </div>
-          <div class="mission-content-text">
-            <p><span>We aim to</span> <br> bridge the gap between those seeking help and the professionals who can
-              provide it. Our extensive network of certified therapists ensures you receive the care and support
-              tailored to your unique needs.</p>
-          </div>
-        </div>
-        <div class="mission-content-bar mission-content-middle">
-          <div class="mission-content-icon">
-            <img src="assets/gallery/mission-content-icon-2.svg" alt="FT-Content-Icon">
-          </div>
-          <div class="mission-content-text">
-            <p><span>We aim to</span> <br> empower individuals with the knowledge and tools needed to take control of
-              their mental health. Our resources are designed to educate, inspire, and foster a community of support.
+          <div class="hero-overlay-lower">
+            <p class="hero-overlay-lower-first">
+              Confidential & Secure&nbsp; |
+              <span>&nbsp;Personalized Advice&nbsp; | </span>&nbsp;Accessible
+              Anytime, Anywhere.
+            </p>
+            <p class="hero-overlay-lower-second">
+              Featured on
+              <a
+                href="https://www.youtube.com/watch?v=lZMac7Gxupc"
+                target="_blank"
+                ><img
+                  class="flourishing-minds"
+                  src="https://i.ibb.co/JRWnMDK/flourishing-minds-podcast-logo.png"
+                  width="50px"
+                  alt="Flourishing Minds Podcast Logo" /></a
+              >&nbsp; • &nbsp;Certified by
+              <a
+                href="https://strongminds.org/team/roscoe-kasujja/"
+                target="_blank"
+                ><img
+                  class="strong-minds"
+                  src="https://strongminds.org/wp-content/uploads/2024/01/strongmindslogo.png"
+                  width="85px"
+                  alt="StrongMinds Logo"
+              /></a>
             </p>
           </div>
         </div>
-        <div class="mission-content-bar mission-content-right">
-          <div class="mission-content-icon">
-            <img src="assets/gallery/mission-content-icon-3.svg" alt="FT-Content-Icon">
+      </div>
+    </section>
+
+    <!-- afterHero -->
+    <section id="afterHero" class="afterHero">
+      <div class="afterHero-wrapper">
+        <div class="afterHero-left">
+          <div class="afterHero-left-access">
+            <p>
+              We believe <span>mental health</span> care should be accessible to
+              everyone.
+            </p>
           </div>
-          <div class="mission-content-text">
-            <p><span>We aim to</span> <br> make mental health care accessible to everyone. Our platform is designed to
-              be user-friendly and affordable, ensuring that anyone, anywhere, can access the help they need.</p>
+          <div class="afterHero-left-start">
+            <p>
+              Start your <span>journey</span> with us today and take the
+              <span>first step</span> towards a healthier,
+              <span>happier</span> you!..
+            </p>
+          </div>
+        </div>
+        <div class="afterHero-right">
+          <div class="afterHero-stats-header">
+            <p>Stats don't lie...</p>
+          </div>
+          <div class="afterHero-stats-content">
+            <div
+              class="afterHero-stats-content-bar afterHero-stats-content-upper"
+            >
+              <p class="afterHero-stat-number"><span>190,000</span>+</p>
+              <p class="afterHero-stat-text">Chat, Video Sessions</p>
+              <div class="afterHero-stats-content-overlay">
+                <p>Over <span>190,000</span> sessions have been conducted.</p>
+              </div>
+            </div>
+            <div
+              class="afterHero-stats-content-bar afterHero-stats-content-middle"
+            >
+              <p class="afterHero-stat-number"><span>500</span>+</p>
+              <p class="afterHero-stat-text">Therapists Ready To Help</p>
+              <div class="afterHero-stats-content-overlay">
+                <p>More than <span>500</span> therapists are ready to help.</p>
+              </div>
+            </div>
+            <div
+              class="afterHero-stats-content-bar afterHero-stats-content-lower"
+            >
+              <p class="afterHero-stat-number"><span>2,000</span>+</p>
+              <p class="afterHero-stat-text">People Got Help</p>
+              <div class="afterHero-stats-content-overlay">
+                <p>
+                  Over <span>2,000</span> people have already received help.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- get started -->
-  <div class="get-started" id="get-started">
-    <div class="get-started-container">
-      <div class="get-started-display"></div>
-      <div class="get-started-wrapper">
-        <div class="get-started-content-bar">
-          <h2>Get Started</h2>
-          <p>
-            We are here to help. Please fill out the form below to get started
-            on your journey to well-being!..
-          </p>
-          <div id="get-started-close" class="get-started-close" type="button">
-            <span>Close</span> <i class="fa-solid fa-xmark"></i>
+    <!-- mission -->
+    <section id="mission" class="mission">
+      <div class="mission-wrapper">
+        <div class="mission-header">
+          <h1>Why we do what we do?</h1>
+        </div>
+        <div class="mission-content">
+          <div class="mission-content-bar mission-content-left">
+            <div class="mission-content-icon">
+              <img src="assets/gallery/mission-1.svg" alt="FT-Content-Icon" />
+            </div>
+            <div class="mission-content-text">
+              <p>
+                <span>We aim to</span> <br />
+                bridge the gap between those seeking help and the professionals
+                who can provide it. Our extensive network of certified
+                therapists ensures you receive the care and support tailored to
+                your unique needs.
+              </p>
+            </div>
+          </div>
+          <div class="mission-content-bar mission-content-middle">
+            <div class="mission-content-icon">
+              <img src="assets/gallery/mission-2.svg" alt="FT-Content-Icon" />
+            </div>
+            <div class="mission-content-text">
+              <p>
+                <span>We aim to</span> <br />
+                empower individuals with the knowledge and tools needed to take
+                control of their mental health. Our resources are designed to
+                educate, inspire, and foster a community of support.
+              </p>
+            </div>
+          </div>
+          <div class="mission-content-bar mission-content-right">
+            <div class="mission-content-icon">
+              <img src="assets/gallery/mission-3.svg" alt="FT-Content-Icon" />
+            </div>
+            <div class="mission-content-text">
+              <p>
+                <span>We aim to</span> <br />
+                make mental health care accessible to everyone. Our platform is
+                designed to be user-friendly and affordable, ensuring that
+                anyone, anywhere, can access the help they need.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- contactForm -->
-        <div class="get-started-content">
-          <form class="get-started-contactForm" id="get-started-contactForm" action="https://formbold.com/s/91yln"
-            method="POST">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
+    <!-- steps -->
+    <section id="steps" class="steps">
+      <div class="steps-container">
+        <div class="steps-wrapper">
+          <div class="steps-header">
+            <h1>How using FieldTherapist works</h1>
+          </div>
+          <div class="steps-content">
+            <div class="step step-one">
+              <div class="step-number">1</div>
+              <div class="step-details">
+                <p class="step-details-heading">Create Your Profile</p>
+                <div class="step-details-overlay">
+                  <p>
+                    <span class="get-started-button">Sign up.</span> Fill in
+                    your details to create a personalized profile that helps us
+                    understand your needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="step step-two">
+              <div class="step-number">2</div>
+              <div class="step-details">
+                <p class="step-details-heading">Explore and Select Services</p>
+                <div class="step-details-overlay">
+                  <p>
+                    Browse through our different therapy services & resources.
+                    Choose the ones that best fit your needs and preferences.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="step step-three">
+              <div class="step-number">3</div>
+              <div class="step-details">
+                <p class="step-details-heading">Connect with a Therapist</p>
+                <div class="step-details-overlay">
+                  <p>
+                    Use our platform to find and connect with a certified
+                    therapist. Schedule sessions at your convenience, whether
+                    in-person or online.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="step step-four">
+              <div class="step-number">4</div>
+              <div class="step-details">
+                <p class="step-details-heading">Start Your Healing Journey</p>
+                <p class="step-details-overlay">
+                  Utilize our resources to support your mental health journey.
+                  Track your progress and adjust your plan as needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
+    <!-- get started -->
+    <div class="get-started" id="get-started">
+      <div class="get-started-container">
+        <div class="get-started-display"></div>
+        <div class="get-started-wrapper">
+          <div class="get-started-content-bar">
+            <h2>Get Started</h2>
+            <p>
+              We are here to help. Please fill out the form below to get started
+              on your journey to well-being!..
+            </p>
+            <div id="get-started-close" class="get-started-close" type="button">
+              <span>Close</span> <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
 
-            <label for="phone">Phone Number (optional)</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,15}" />
+          <!-- contactForm -->
+          <div class="get-started-content">
+            <form
+              class="get-started-contactForm"
+              id="get-started-contactForm"
+              action="https://formbold.com/s/91yln"
+              method="POST"
+            >
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required />
 
-            <label for="reason">Reason for Seeking Therapy:</label>
-            <textarea id="reason" name="reason" rows="6" minlength="50" maxlength="300"
-              placeholder="Briefly describe why you are seeking therapy..." required></textarea>
-            <div id="char-count">300</div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
 
-            <button type="submit">Submit</button>
-          </form>
+              <label for="phone">Phone Number (optional)</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10,15}"
+              />
 
-          <!-- contactForm  Popup Message -->
-          <div id="get-started-contact-popup">
-            <div class="get-started-contact-popup-content">
-              <p>Thank you.</p>
-              <button id="get-started-contact-closePopup">OK</button>
+              <label for="reason">Reason for Seeking Therapy:</label>
+              <textarea
+                id="reason"
+                name="reason"
+                rows="6"
+                minlength="50"
+                maxlength="300"
+                placeholder="Briefly describe why you are seeking therapy..."
+                required
+              ></textarea>
+              <div id="char-count">300</div>
+
+              <button type="submit">Submit</button>
+            </form>
+
+            <!-- contactForm  Popup Message -->
+            <div id="get-started-contact-popup">
+              <div class="get-started-contact-popup-content">
+                <p>Thank you.</p>
+                <button id="get-started-contact-closePopup">OK</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- footer -->
-  <footer class="footer">
-    <div class="footer-wrap">
-      <div class="footer-bar upperbar">
-        <div class="upperbar-left">
-          <p>
-            <a href="#home"><strong>FieldTherapist</strong></a>
-          </p>
-          <p>Empowering Minds, One Session at a Time.</p>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-wrap">
+        <div class="footer-bar upperbar">
+          <div class="upperbar-left">
+            <p>
+              <a href="#home"><strong>FieldTherapist</strong></a>
+            </p>
+            <p>Empowering Minds, One Session at a Time.</p>
+          </div>
+          <div class="upperbar-right">
+            <button class="footer-start-btn get-started-button" type="button">
+              Get Started
+            </button>
+          </div>
         </div>
-        <div class="upperbar-right">
-          <button class="footer-start-btn get-started-button" type="button">Get Started</button>
+        <div class="footer-bar middlebar" id="middlebar">
+          <div class="middlebar-left-links">
+            <a href="#home">Home</a>
+            <a href="index.html">About Us</a>
+            <a href="index.html">Get Help</a>
+            <a href="index.html">Careers</a>
+            <a href="index.html">Our Team</a>
+            <a href="index.html">Reviews</a>
+            <a href="index.html">FAQs</a>
+            <a href="index.html">Contact Us</a>
+          </div>
+          <div class="middlebar-right-socials">
+            <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
+            <a href="index.html"><i class="fa-brands fa-facebook"></i></a>
+            <a href="index.html"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="index.html"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-bar lowerbar">
+          <small>© 2024 FieldTherapist, Inc</small>
+          <small
+            >Website by:
+            <span
+              ><a href="https://x.com/gelthemu" target="_blank">Gel .</a></span
+            ></small
+          >
         </div>
       </div>
-      <div class="footer-bar middlebar" id="middlebar">
-        <div class="middlebar-left-links">
-          <a href="#home">Home</a>
-          <a href="index.html">About Us</a>
-          <a href="index.html">Get Help</a>
-          <a href="index.html">Careers</a>
-          <a href="index.html">Our Team</a>
-          <a href="index.html">Reviews</a>
-          <a href="index.html">FAQs</a>
-          <a href="index.html">Contact Us</a>
-        </div>
-        <div class="middlebar-right-socials">
-          <a href="index.html"><i class="fa-brands fa-twitter"></i></a>
-          <a href="index.html"><i class="fa-brands fa-facebook"></i></a>
-          <a href="index.html"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="index.html"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-      </div>
-      <div class="footer-bar lowerbar">
-        <small>© 2024 FieldTherapist, Inc</small>
-        <small>Website by:
-          <span><a href="https://x.com/gelthemu" target="_blank">Gel.</a></span></small>
-      </div>
-    </div>
-    </div>
-  </footer>
+    </footer>
 
-  <!-- scripts -->
-  <script src="scripts.js" type="text/javascript"></script>
-  <script src="assets/js/other-scripts.js" type="text/javascript"></script>
-  <script src="assets/js/after-hero.js" type="text/javascript"></script>
-  <script src="assets/js/get-started.js" type="text/javascript"></script>
-</body>
-
+    <!-- scripts -->
+    <script src="scripts.js" type="text/javascript"></script>
+    <script src="assets/js/other-scripts.js" type="text/javascript"></script>
+    <script src="assets/js/after-hero.js" type="text/javascript"></script>
+    <script src="assets/js/get-started.js" type="text/javascript"></script>
+  </body>
 </html>
